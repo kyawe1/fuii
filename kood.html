@@ -1,0 +1,121 @@
+﻿<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href="/css/home.css">
+    </link>
+    <script src='/navigationbar.js'></script>
+    <script src='accessory.js'></script>
+</head>
+
+<body>
+    <script>
+        navigationbar.n();
+        window.onload = function () {
+            var request = new XMLHttpRequest();
+
+            request.onreadystatechange = function () {
+                var b = document.getElementByName('img1');
+                var arr1 = JSON.parse(this.responseText);
+                console.log(typeof (arr));
+                for (var i = 0; i < b.length; i++) {
+                    b[i].src = arr1.arr[i];
+                }
+            }
+            request.open("POST", '/nike', true);
+            request.send('ok');
+        }
+    </script>
+    <div class="row">
+        <div class='column'>
+            <div class='card'>
+                <img src="/photo/book.jpg" name="img1" alt="myPhoto" width=120>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='card'>
+                <img src='/photo/photo2.png' name="img1" alt="okphoto" width=120>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='card'>
+                <img src='/photo/photo3.jpg' name="img1" alt="good" width=120>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='card'>
+                <img src='/photo/photo4.png' name="img1" alt="ok" width=120>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card"> <img src='/photo/photo5.png' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo6.png' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo7.png' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo8.png' name="img1" alt="ok" width=120></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card"> <img src='/photo/photo9.png' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo10.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo11.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo12.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card"> <img src='/photo/photo13.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo14.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo15.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+        <div class="column">
+            <div class="card"> <img src='/photo/photo16.jpg' name="img1" alt="ok" width=120></div>
+        </div>
+    </div>
+    <div>
+        <div class='btn-group' align='center'>
+            <button onclick="p();"> &lt;</button>
+            <button onclick="ok();"> 1</button>
+            <button onclick="jk();"> 2</button>
+            <button onclick="io();"> 3</button>
+            <button onclick="gt();"> &gt;</button>
+        </div>
+    </div>
+    <div id="1"></div>
+    <script type='text/javascript'>
+        var p = function () {
+            b.route(g);
+        }
+        var ok = function () {
+            b.route1(g);
+        }
+        var jk = function () {
+            b.route2(g);
+        }
+        var io = function () {
+            b.route3(g);
+        }
+        var gt = function () {
+            b.route4(g);
+        }
+    </script>
+</body>
+
+</html>

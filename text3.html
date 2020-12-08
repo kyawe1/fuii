@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='cookieU.js'></script>
+</head>
+
+<body>
+    <script>
+        function f1() {
+            var get1 = c.get('mname1');
+            var get2 = c.get('mname2');
+            document.getElementById('a').innerHTML = `My name is ${get1}`;
+            document.getElementById('b').innerHTML = `My name is ${get2}`;
+        }
+    </script>
+    <div id='a'>
+    </div><br>
+    <div id='b'></div>
+</body>
+
+</html>

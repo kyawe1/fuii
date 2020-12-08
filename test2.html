@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src='cookieU.js'></script>
+    <script>
+        function f() {
+            var n1 = document.getElementById('t1').value;
+            var n1 = document.getElementById('t2').value;
+            cookieU.set('mname1', n1);
+            cookieU.set('mname2', n2);
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <form method='GET' action='text3.html' onSubmit='f();'>
+        Name<input type='text' id='t1' placeholder="hi i'm your father" />
+        value<input type='text' id='t2' placeholder="hi i'm your father" />
+        <input type='submit' value='submit'>
+    </form>
+</body>
+
+</html>
