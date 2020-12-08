@@ -13,5 +13,7 @@ b.use('/shop', shop);
 b.get('/l', function (req, res) {
     res.sendFile(`${__dirname}/test.html`);
 })
-
+b.get('/mytext', function (req, res) {
+    res.sendFile(`${__dirname}/text.html`)
+})
 b.listen(5000);
